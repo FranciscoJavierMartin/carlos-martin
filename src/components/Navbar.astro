@@ -3,9 +3,10 @@
 ---
 
 <div class='nav h-14 w-full'>
+  <!-- TODO: Try with focus -->
   <input type='checkbox' id='nav-check' class='hidden' />
   <div class='nav-header inline'>
-    <div class='nav-title'>JoGeek</div>
+    <div class='inline-block text-2xl text-white p-3'>JoGeek</div>
   </div>
   <div class='nav-btn'>
     <label for='nav-check'>
@@ -16,7 +17,7 @@
   </div>
 
   <div class='nav-links'>
-    <a href='#aboutme' target='_blank'>About me</a>
+    <a href='#aboutme'>About me</a>
     <a href='http://stackoverflow.com/users/4084003/' target='_blank'
       >Stackoverflow</a
     >
@@ -31,17 +32,6 @@
 <style>
   .nav {
     background-color: #4d4d4d;
-  }
-
-  .nav > .nav-header {
-    /* display: inline; */
-  }
-
-  .nav > .nav-header > .nav-title {
-    display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
   }
 
   .nav > .nav-btn {
@@ -78,10 +68,7 @@
       height: 50px;
       padding: 13px;
     }
-    .nav > .nav-btn > label:hover,
-    .nav #nav-check:checked ~ .nav-btn > label {
-      /* background-color: rgba(0, 0, 0, 0.3); */
-    }
+
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
