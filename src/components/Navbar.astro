@@ -4,7 +4,7 @@
 
 <div class='nav h-14 w-full'>
   <input type='checkbox' id='nav-check' class='hidden' />
-  <div class='nav-header'>
+  <div class='nav-header inline'>
     <div class='nav-title'>JoGeek</div>
   </div>
   <div class='nav-btn'>
@@ -34,7 +34,7 @@
   }
 
   .nav > .nav-header {
-    display: inline;
+    /* display: inline; */
   }
 
   .nav > .nav-header > .nav-title {
@@ -80,7 +80,7 @@
     }
     .nav > .nav-btn > label:hover,
     .nav #nav-check:checked ~ .nav-btn > label {
-      background-color: rgba(0, 0, 0, 0.3);
+      /* background-color: rgba(0, 0, 0, 0.3); */
     }
     .nav > .nav-btn > label > span {
       display: block;
@@ -103,6 +103,7 @@
       display: block;
       width: 100%;
     }
+    //TODO: Refactor
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
     }
