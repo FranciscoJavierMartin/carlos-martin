@@ -8,8 +8,9 @@
   <div class='nav-header inline'>
     <div class='inline-block text-2xl text-white p-3'>JoGeek</div>
   </div>
-  <div class='nav-btn'>
-    <label for='nav-check'>
+  <!-- TODO: Remove nav-btn -->
+  <div class='nav-btn inline-block absolute right-0 top-0 md:hidden'>
+    <label for='nav-check' class='inline-block w-14 h-14 p-3'>
       <span></span>
       <span></span>
       <span></span>
@@ -34,10 +35,6 @@
     background-color: #4d4d4d;
   }
 
-  .nav > .nav-btn {
-    display: none;
-  }
-
   .nav > .nav-links {
     display: inline;
     float: right;
@@ -56,19 +53,6 @@
   }
 
   @media (max-width: 600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 0px;
-      top: 0px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      padding: 13px;
-    }
-
     .nav > .nav-btn > label > span {
       display: block;
       width: 25px;
