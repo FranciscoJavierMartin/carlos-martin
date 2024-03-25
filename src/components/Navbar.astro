@@ -8,8 +8,8 @@
   <div class='nav-header inline'>
     <div class='inline-block text-2xl text-white p-3'>JoGeek</div>
   </div>
-  <!-- TODO: Remove nav-btn -->
-  <div class='nav-btn inline-block absolute right-0 top-0 md:hidden'>
+
+  <div class='inline-block absolute right-0 top-0 md:hidden'>
     <label for='nav-check' class='inline-block w-14 h-14 p-3'>
       <span class='block w-6 h-3 border-t-2 border-white'></span>
       <span class='block w-6 h-3 border-t-2 border-white'></span>
@@ -17,7 +17,9 @@
     </label>
   </div>
 
-  <div class='nav-links'>
+  <div
+    class='nav-links block float-right text-lg absolute w-full h-0 overflow-y-hidden top-14 left-0 transition-all ease-in duration-300 md:inline md:static'
+  >
     <a href='#aboutme'>About me</a>
     <a href='http://stackoverflow.com/users/4084003/' target='_blank'
       >Stackoverflow</a
@@ -36,9 +38,9 @@
   }
 
   .nav > .nav-links {
-    display: inline;
-    float: right;
-    font-size: 18px;
+    /* display: inline; */
+    /* float: right; */
+    /* font-size: 18px; */
   }
 
   .nav > .nav-links > a {
@@ -54,15 +56,15 @@
 
   @media (max-width: 600px) {
     .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
+      /* position: absolute; */
+      /* display: block; */
+      /* width: 100%; */
       background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 50px;
-      left: 0px;
+      /* height: 0px; */
+      /* transition: all 0.3s ease-in; */
+      /* overflow-y: hidden; */
+      /* top: 50px; */
+      /* left: 0px; */
     }
     .nav > .nav-links > a {
       display: block;
