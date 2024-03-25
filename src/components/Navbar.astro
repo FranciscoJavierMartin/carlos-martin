@@ -4,7 +4,7 @@
 
 <div class='nav h-14 w-full'>
   <!-- TODO: Try with focus -->
-  <input type='checkbox' id='nav-check' class='hidden' />
+  <input type='checkbox' id='nav-check' class='hidden' checked/>
   <div class='nav-header inline'>
     <div class='inline-block text-2xl text-white p-3'>JoGeek</div>
   </div>
@@ -18,7 +18,7 @@
   </div>
 
   <div
-    class='nav-links'
+    class='nav-links block absolute md:inline md:static'
   >
     <a href='#aboutme'>About me</a>
     <a href='http://stackoverflow.com/users/4084003/' target='_blank'
@@ -38,7 +38,7 @@
   }
 
   .nav > .nav-links {
-    display: inline;
+    /* display: inline; */
     float: right;
     font-size: 18px;
   }
@@ -56,8 +56,8 @@
 
   @media (max-width: 600px) {
     .nav > .nav-links {
-      position: absolute;
-      display: block;
+      /* position: absolute; */
+      /* display: block; */
       width: 100%;
       background-color: #333;
       height: 0px;
