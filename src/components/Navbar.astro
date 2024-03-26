@@ -1,9 +1,22 @@
 ---
-
+const links = [
+  {
+    title: 'About me',
+    section: '#aboutme',
+  },
+  {
+    title: 'FAQ',
+    section: '#faq',
+  },
+  {
+    title: 'Help',
+    section: '#help',
+  },
+];
 ---
 
 <div class='nav h-14 w-full'>
-  <!-- TODO: Try with focus -->
+  <!-- TODO: Try with focus/button -->
   <input type='checkbox' id='nav-check' class='hidden' checked />
   <div class='nav-header inline'>
     <div class='inline-block text-2xl text-white p-3'>JoGeek</div>
@@ -20,15 +33,16 @@
   <div
     class='nav-links block absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 md:inline md:static max-md:w-full max-md:overflow-y-hidden'
   >
-    <a class="block text-white py-3 px-2 md:inline-block max-md:w-full" href='#aboutme'>About me</a>
-    <a href='http://stackoverflow.com/users/4084003/' target='_blank'
-      >Stackoverflow</a
-    >
-    <a href='https://in.linkedin.com/in/jonesvinothjoseph' target='_blank'
-      >LinkedIn</a
-    >
-    <a href='https://codepen.io/jo_Geek/' target='_blank'>Codepen</a>
-    <a href='https://jsfiddle.net/user/jo_Geek/' target='_blank'>JsFiddle</a>
+    {
+      links.map((data) => (
+        <a
+          class='block text-white py-3 px-2 md:inline-block max-md:w-full'
+          href={data.section}
+        >
+          {data.title}
+        </a>
+      ))
+    }
   </div>
 </div>
 
