@@ -35,7 +35,7 @@ const links = [
 ];
 ---
 
-<div class='nav h-14 w-full bg-slate-800'>
+<div class='nav h-14 w-full bg-slate-800 md:max-[1305px]:h-28'>
   <!--<div class='nav-header inline'>
     <div class='inline-block text-2xl text-white p-3'>Carlos Martín</div>
   </div>-->
@@ -62,7 +62,7 @@ const links = [
   </button>
 
   <div
-    class='nav-links block bg-slate-900 absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 md:inline md:static max-md:w-full max-md:overflow-y-hidden'
+    class='nav-links block bg-slate-900 absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 md:inline md:static md:text-right max-md:w-full max-md:overflow-y-hidden'
   >
     {
       links.map((data) => (
@@ -78,6 +78,12 @@ const links = [
 </div>
 
 <style>
+  @media (max-width: 1305px) {
+    .nav {
+      /* height: 112px; */
+    }
+  }
+
   @media (max-width: 768px) {
     /* TODO: Move to tailwind */
     .nav button#nav-check:not(:focus) ~ .nav-links {
