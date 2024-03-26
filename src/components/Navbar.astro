@@ -16,19 +16,18 @@ const links = [
 ---
 
 <div class='nav h-14 w-full'>
-  <!-- TODO: Try with focus/button -->
-  <input type='checkbox' id='nav-check' class='hidden' checked />
   <div class='nav-header inline'>
     <div class='inline-block text-2xl text-white p-3'>JoGeek</div>
   </div>
 
-  <div class='inline-block absolute right-0 top-0 md:hidden'>
-    <label for='nav-check' class='inline-block w-14 h-14 p-3'>
-      <span class='block w-6 h-3 border-t-2 border-white'></span>
-      <span class='block w-6 h-3 border-t-2 border-white'></span>
-      <span class='block w-6 h-3 border-t-2 border-white'></span>
-    </label>
-  </div>
+  <button
+    id='nav-check'
+    class='inline-block w-14 h-14 p-3 absolute right-0 top-0 md:hidden'
+  >
+    <span class='block w-6 h-3 border-t-2 border-white'></span>
+    <span class='block w-6 h-3 border-t-2 border-white'></span>
+    <span class='block w-6 h-3 border-t-2 border-white'></span>
+  </button>
 
   <div
     class='nav-links block absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 md:inline md:static max-md:w-full max-md:overflow-y-hidden'
@@ -68,6 +67,15 @@ const links = [
     background-color: rgba(0, 0, 0, 0.3);
   }
 
+  .nav button#nav-check:not(:focus) ~ .nav-links {
+    height: 0px;
+  }
+
+  .nav button#nav-check:focus ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
   @media (max-width: 600px) {
     .nav > .nav-links {
       /* position: absolute; */
@@ -85,12 +93,12 @@ const links = [
       /* width: 100%; */
     }
     //TODO: Refactor
-    .nav > #nav-check:not(:checked) ~ .nav-links {
+    /*.nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
-    }
+    }*/
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
+      /* height: calc(100vh - 50px); */
+      /* overflow-y: auto; */
     }
   }
 </style>
