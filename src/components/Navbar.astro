@@ -50,17 +50,16 @@ const links = [
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  /* TODO: Move to tailwind */
-  .nav button#nav-check:not(:focus) ~ .nav-links {
-    height: 0px;
-  }
+  @media (max-width: 768px) {
+    /* TODO: Move to tailwind */
+    .nav button#nav-check:not(:focus) ~ .nav-links {
+      height: 0px;
+    }
 
-  /* TODO: Move to tailwind */
-  .nav button#nav-check:focus ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-
-  @media (max-width: 600px) {
+    /* TODO: Move to tailwind */
+    .nav button#nav-check:focus ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
   }
 </style>
