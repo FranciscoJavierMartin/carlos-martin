@@ -1,9 +1,16 @@
 ---
 import brainLogo from '../assets/cerebro.svg?raw';
+import signature from '../assets/carlos_martin_signature.svg?raw';
 ---
 
-<header class='pt-14 md:max-[1305px]:pt-28'>
-  <div>
-    <Fragment set:html={brainLogo} />
+<header class='pt-14 w-full max-w-full md:max-[1305px]:pt-28'>
+  <div class='relative'>
+    <div class='top-0'>
+      <Fragment set:html={brainLogo} />
+    </div>
+    <div class='absolute top-0'>
+      <Fragment set:html={signature} />
+      <h1>Psicología para la salud mental y el rendimiento deportivo</h1>
+    </div>
   </div>
 </header>
