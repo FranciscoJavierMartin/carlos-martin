@@ -16,17 +16,29 @@ const links = [
 ---
 
 <div class='nav h-14 w-full bg-slate-800'>
-  <div class='nav-header inline'>
-    <div class='inline-block text-2xl text-white p-3'>JoGeek</div>
-  </div>
+  <!--<div class='nav-header inline'>
+    <div class='inline-block text-2xl text-white p-3'>Carlos Martín</div>
+  </div>-->
 
   <button
     id='nav-check'
     class='inline-block w-14 h-14 p-3 absolute right-0 top-0 md:hidden'
   >
-    <span class='block w-6 h-3 border-t-2 border-white'></span>
-    <span class='block w-6 h-3 border-t-2 border-white'></span>
-    <span class='block w-6 h-3 border-t-2 border-white'></span>
+    <span class='sr-only'>Abrir menu</span>
+    <svg
+      class='w-7 h-7 text-white'
+      aria-hidden='true'
+      xmlns='http://www.w3.org/2000/svg'
+      fill='none'
+      viewBox='0 0 17 14'
+    >
+      <path
+        stroke='currentColor'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+        stroke-width='2'
+        d='M1 1h15M1 7h15M1 13h15'></path>
+    </svg>
   </button>
 
   <div
