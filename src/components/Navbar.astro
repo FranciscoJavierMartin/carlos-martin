@@ -30,7 +30,7 @@ const links = [
   </button>
 
   <div
-    class='nav-links block absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 md:inline md:static max-md:w-full max-md:overflow-y-hidden'
+    class='nav-links block bg-slate-900 absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 md:inline md:static max-md:w-full max-md:overflow-y-hidden'
   >
     {
       links.map((data) => (
@@ -79,20 +79,5 @@ const links = [
   }
 
   @media (max-width: 600px) {
-    .nav > .nav-links {
-      /* position: absolute; */
-      /* display: block; */
-      /* width: 100%; */
-      background-color: #333;
-      /* height: 0px; */
-      /* transition: all 0.3s ease-in; */
-      /* overflow-y: hidden; */
-      /* top: 50px; */
-      /* left: 0px; */
-    }
-    .nav > .nav-links > a {
-      /* display: block; */
-      /* width: 100%; */
-    }
   }
 </style>
