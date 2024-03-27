@@ -35,7 +35,7 @@ const links = [
 ];
 ---
 
-<div class='nav h-14 w-full bg-slate-800 fixed md:max-[1305px]:h-28'>
+<div class='nav h-14 w-full bg-slate-800 fixed md:max-[1305px]:h-28 z-10'>
   <!--<div class='nav-header inline'>
     <div class='inline-block text-2xl text-white p-3'>Carlos Martín</div>
   </div>-->
@@ -43,7 +43,7 @@ const links = [
   <button
     id='nav-check'
     class='inline-block w-14 h-14 p-3 absolute right-0 top-0 md:hidden'
-    tabindex="0"
+    tabindex='0'
   >
     <span class='sr-only'>Abrir menu</span>
     <svg
@@ -63,7 +63,7 @@ const links = [
   </button>
 
   <div
-    class='nav-links block bg-slate-900 absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 md:inline md:static md:text-right max-md:w-full max-md:overflow-y-hidden'
+    class='nav-links block bg-slate-900 absolute h-0 top-14 left-0 text-lg float-right transition-all ease-in duration-300 max-md:w-full max-md:overflow-y-hidden md:inline md:static md:text-right'
   >
     {
       links.map((data) => (
