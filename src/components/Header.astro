@@ -28,13 +28,13 @@ import { Image } from 'astro:assets';
 
     <Image
       src={signature}
-      height='600'
-      width='1200'
+      height='171'
+      width='600'
       alt='Carlos Martin'
-      class='border border-green-500'
+      class='border border-green-500 w-4/5'
     />
     <h1
-      class='absolute xl:top-[425px] lg:top-[400px] md:top-[350px] w-3/5 text-center text-3xl uppercase border border-yellow-500'
+      class='absolute font-semibold w-3/5 text-center text-3xl uppercase tracking-[0.35rem] text-[#f0bc68] [text-shadow:1px_1px_1px_var(--tw-shadow-color)] shadow-[#87adcf] border border-yellow-500'
     >
       Psicología para la salud mental y el rendimiento deportivo
     </h1>
@@ -49,5 +49,9 @@ import { Image } from 'astro:assets';
     background-repeat: no-repeat;
 
     background-clip: content-box;
+  }
+
+  h1 {
+    top: calc(70%);
   }
 </style>
