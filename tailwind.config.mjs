@@ -7,6 +7,9 @@ export default {
         golden: '#f0bc68',
         'light-blue': '#87adcf',
       },
+      letterSpacing: {
+        'ultra-wide': '0.35rem',
+      },
     },
   },
   plugins: [],
