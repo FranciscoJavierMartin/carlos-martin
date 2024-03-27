@@ -4,8 +4,45 @@
 
 <section id='help' class='px-2 py-3 w-full'>
   <h2
-    class='tracking-widest pr-8 text-right font-semibold text-2xl uppercase text-[#f0bc68] [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(0,0,0,0.43)]'
+    class='tracking-widest pr-8 pb-4 text-right font-semibold text-2xl uppercase text-[#f0bc68] [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(0,0,0,0.43)]'
   >
     ¿Cómo puedo ayudarte?
   </h2>
+  <div class='container w-full min-w-full'>
+    <p class='first-text rounded-3xl py-5 px-7 text-white bg-[#87adcf]'>
+      La terapia psicológica es la mejor herramienta que tenemos para entender
+      cómo nos comportamos y por qué lo hacemos. Pero no solo eso, si no que
+      también nos permite aprender herramientas para aprender a gestionar mejor
+      nuestros pensamientos, nuestras emociones y nuestras acciones.
+    </p>
+    <p class='second-text rounded-3xl py-5 px-5 text-white bg-[#87adcf]'>
+      Como terapeuta, te voy a acompañar en tu proceso de cambio. No para
+      decirte lo que tienes que hacer, si no para escucharte, orientarte y darte
+      herramientas para que seas capaz de sanar tu dolor y gestionar mejor
+      aquellas situaciones de tu vida que te presenten dificultad.
+    </p>
+  </div>
 </section>
+
+<style>
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      'first first .'
+      'image second second';
+  }
+
+  .first-text {
+    grid-area: first;
+  }
+
+  .second-text {
+    grid-area: second;
+    width: 100%;
+  }
+
+  .image {
+    grid-area: image;
+  }
+</style>
