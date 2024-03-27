@@ -2,6 +2,41 @@
 
 ---
 
-<section id="work" class="h-screen grid place-content-center">
-  ¿Qué podemos trabajar en terapia?
+<section id='work' class='px-2 py-3 w-full'>
+  <h2
+    class='tracking-[0.35rem] pr-8 pb-4 font-semibold text-2xl uppercase text-[#f0bc68] [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(0,0,0,0.43)]'
+  >
+    ¿Qué podemos trabajar en terapia?
+  </h2>
+  <div class='container w-full min-w-full'>
+    <p class='first-text rounded-3xl py-5 px-7 bg-[#f0bc68]'>
+      El trabajo que podemos hacer en terapia es bastante amplio:
+    </p>
+    <p class='second-text rounded-3xl py-5 px-5'>
+      En mi recorrido profesional he trabajado tanto con personas que hacen
+      deporte por salud, con deportistas amateurs y con deportistas
+      profesionales. Buscando siempre mejorar su rendimiento deportivo.
+    </p>
+  </div>
 </section>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-areas:
+      'first first image'
+      '. second second';
+  }
+
+  .first-text {
+    grid-area: first;
+  }
+
+  .second-text {
+    grid-area: second;
+  }
+
+  .image {
+    grid-area: image;
+  }
+</style>
