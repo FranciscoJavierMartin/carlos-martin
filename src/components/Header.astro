@@ -1,40 +1,21 @@
 ---
-import brainLogo from '../assets/cerebro_2.svg';
 import signature from '../assets/carlos_martin_signature_2.svg';
 import { Image } from 'astro:assets';
 ---
 
-<header class='pt-14 w-full max-w-full md:max-[1305px]:pt-28'>
-  <!-- <div class='relative border border-green-500'>
-    <div class='top-0 w-full'>
-      <Fragment set:html={brainLogo} class:list={['w-full']} />
-    </div>
-    <div class='absolute top-0 w-full'>
-      <Fragment set:html={signature} />
-    </div>
-  </div>
-  <h1>Psicología para la salud mental y el rendimiento deportivo</h1> -->
-  <div
-    class='relative w-full flex flex-col items-center border border-red-500'
-    id='mio'
-  >
-    <!-- <Image
-      src={brainLogo}
-      height='600'
-      width='1200'
-      alt='Cerebro'
-      class='border border-blue-500'
-    /> -->
-
+<header
+  class='pt-14 w-full max-w-full md:max-[1305px]:pt-28 max-sm:pb-14 md:mb-10'
+>
+  <div class='relative w-full flex flex-col items-center' id='mio'>
     <Image
       src={signature}
       height='171'
       width='600'
       alt='Carlos Martin'
-      class='border border-green-500 w-4/5'
+      class='w-4/5'
     />
     <h1
-      class='absolute font-semibold w-3/5 text-center text-3xl uppercase tracking-[0.35rem] text-[#f0bc68] [text-shadow:1px_1px_1px_var(--tw-shadow-color)] shadow-[#87adcf] border border-yellow-500'
+      class='absolute font-semibold w-3/5 max-sm:w-4/5 text-center md:text-2xl lg:text-3xl uppercase tracking-[0.35rem] text-[#f0bc68] [text-shadow:1px_1px_1px_var(--tw-shadow-color)] shadow-[#87adcf]'
     >
       Psicología para la salud mental y el rendimiento deportivo
     </h1>
