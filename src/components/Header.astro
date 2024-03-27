@@ -14,14 +14,17 @@ import { Image } from 'astro:assets';
     </div>
   </div>
   <h1>Psicología para la salud mental y el rendimiento deportivo</h1> -->
-  <div class="w-full flex flex-col items-center border border-red-500">
-    <Image
+  <div
+    class='relative w-full flex flex-col items-center border border-red-500'
+    id='mio'
+  >
+    <!-- <Image
       src={brainLogo}
       height='600'
       width='1200'
       alt='Cerebro'
       class='border border-blue-500'
-    />
+    /> -->
 
     <Image
       src={signature}
@@ -30,8 +33,21 @@ import { Image } from 'astro:assets';
       alt='Carlos Martin'
       class='border border-green-500'
     />
-    <h1 class='text-3xl uppercase border border-yellow-500'>
+    <h1
+      class='absolute xl:top-[425px] lg:top-[400px] md:top-[350px] w-3/5 text-center text-3xl uppercase border border-yellow-500'
+    >
       Psicología para la salud mental y el rendimiento deportivo
     </h1>
   </div>
 </header>
+
+<style>
+  #mio {
+    background-image: url(../assets/cerebro_2.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-clip: content-box;
+  }
+</style>
