@@ -1,5 +1,5 @@
 ---
-import brainLogo from '../assets/cerebro.svg?raw';
+import brainLogo from '../assets/cerebro_2.svg';
 import signature from '../assets/carlos_martin_signature_2.svg';
 import { Image } from 'astro:assets';
 ---
@@ -14,15 +14,23 @@ import { Image } from 'astro:assets';
     </div>
   </div>
   <h1>Psicología para la salud mental y el rendimiento deportivo</h1> -->
-  <div class='border border-red-500 relative w-full flex flex-row justify-center'>
+  <div class="w-full flex flex-col items-center border border-red-500">
+    <Image
+      src={brainLogo}
+      height='600'
+      width='1200'
+      alt='Cerebro'
+      class='border border-blue-500'
+    />
+
     <Image
       src={signature}
       height='600'
       width='1200'
       alt='Carlos Martin'
-      class='border border-green-500 h-[350px]'
+      class='border border-green-500'
     />
-    <h1 class='text-center absolute top-60 w-4/5 text-3xl uppercase border border-yellow-500'>
+    <h1 class='text-3xl uppercase border border-yellow-500'>
       Psicología para la salud mental y el rendimiento deportivo
     </h1>
   </div>
