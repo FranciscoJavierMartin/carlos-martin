@@ -2,46 +2,29 @@
 
 ---
 
-<section id='help' class='px-2 py-3 w-full'>
+<section id='help' class='px-2 py-3 w-full min-w-full'>
   <h2
-    class='tracking-ultra-wide pr-8 pb-4 text-right font-semibold text-4xl uppercase text-golden [text-shadow:1px_1px_1px_var(--tw-shadow-color)] shadow-golden'
+    class='tracking-ultra-wide pr-8 pb-8 text-right font-semibold text-4xl uppercase text-golden [text-shadow:1px_1px_1px_var(--tw-shadow-color)] shadow-golden'
   >
     ¿Cómo puedo ayudarte?
   </h2>
-  <div class='container w-full min-w-full'>
-    <p class='first-text rounded-3xl py-5 px-7 text-white bg-[#87adcf]'>
-      La terapia psicológica es la mejor herramienta que tenemos para entender
-      cómo nos comportamos y por qué lo hacemos. Pero no solo eso, si no que
-      también nos permite aprender herramientas para aprender a gestionar mejor
-      nuestros pensamientos, nuestras emociones y nuestras acciones.
-    </p>
-    <p class='second-text rounded-3xl py-5 px-5 text-white bg-[#87adcf]'>
-      Como terapeuta, te voy a acompañar en tu proceso de cambio. No para
-      decirte lo que tienes que hacer, si no para escucharte, orientarte y darte
-      herramientas para que seas capaz de sanar tu dolor y gestionar mejor
-      aquellas situaciones de tu vida que te presenten dificultad.
-    </p>
-    <span>Espera! que aún hay más!</span>
+  <div class='w-full flex font-semibold'>
+    <div class='w-[70%] pb-12 pr-10 text-lg'>
+      <p>
+        La terapia psicológica es la mejor herramienta que tenemos para entender
+        cómo nos comportamos y por qué lo hacemos. Pero no solo eso, si no que
+        también nos permite aprender herramientas para aprender a gestionar
+        mejor nuestros pensamientos, nuestras emociones y nuestras acciones.
+      </p>
+      <p class='pt-5'>
+        Como terapeuta, te voy a acompañar en tu proceso de cambio. No para
+        decirte lo que tienes que hacer, si no para escucharte, orientarte y
+        darte herramientas para que seas capaz de sanar tu dolor y gestionar
+        mejor aquellas situaciones de tu vida que te presenten dificultad.
+      </p>
+    </div>
+    <div class='w-[30%] text-3xl flex flex-col justify-end'>
+      <span>Espera! que aún hay más!</span>
+    </div>
   </div>
 </section>
-
-<style>
-  .container {
-    display: grid;
-    grid-template-areas:
-      'first first .'
-      'image second second';
-  }
-
-  .first-text {
-    grid-area: first;
-  }
-
-  .second-text {
-    grid-area: second;
-  }
-
-  .image {
-    grid-area: image;
-  }
-</style>
