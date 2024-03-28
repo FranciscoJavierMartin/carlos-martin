@@ -10,6 +10,7 @@ export default {
           light: '#87adcf',
         },
         salmon: '#e8aea3',
+        beige: '#F2EDE8',
       },
       letterSpacing: {
         'ultra-wide': '0.35rem',
