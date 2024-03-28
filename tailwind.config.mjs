@@ -5,7 +5,9 @@ export default {
     extend: {
       colors: {
         golden: '#f0bc68',
+        'blue-steel': '#61829f',
         'light-blue': '#87adcf',
+        salmon: '#e8aea3',
       },
       letterSpacing: {
         'ultra-wide': '0.35rem',
