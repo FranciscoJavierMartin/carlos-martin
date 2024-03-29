@@ -31,22 +31,24 @@ const faqs = [
 ];
 ---
 
-<section class='w-full'>
-  <h2
-    class='tracking-ultra-wide pr-8 pb-8 text-right font-semibold text-4xl uppercase text-golden [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(97,130,159,0.43)]'
-  >
-    Preguntas frecuentes
-  </h2>
-  <div class='flex flex-col'>
-    {
-      faqs.map((faq) => (
-        <div class='py-2'>
-          <details class='group'>
-            <summary>{faq.question}</summary>
-            <p class='group-open:animate-fadeIn'>{faq.answer}</p>
-          </details>
-        </div>
-      ))
-    }
+<section id='faq' class='px-2 py-3 w-full flex justify-end'>
+  <div class='bg-blue-steel flex flex-col w-[70%] p-7'>
+    <h2
+      class='tracking-ultra-wide pr-8 pb-8 text-right font-semibold text-4xl uppercase text-golden [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(97,130,159,0.43)]'
+    >
+      Preguntas frecuentes
+    </h2>
+    <div class='flex flex-col text-white'>
+      {
+        faqs.map((faq) => (
+          <div class='py-2'>
+            <details class='group'>
+              <summary>{faq.question}</summary>
+              <p class='pl-5 group-open:animate-fadeIn'>{faq.answer}</p>
+            </details>
+          </div>
+        ))
+      }
+    </div>
   </div>
 </section>
