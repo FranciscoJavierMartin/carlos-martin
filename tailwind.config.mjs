@@ -15,6 +15,15 @@ export default {
       letterSpacing: {
         'ultra-wide': '0.35rem',
       },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 100 },
+        },
+      },
     },
   },
   plugins: [],
