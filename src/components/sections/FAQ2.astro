@@ -9,47 +9,39 @@ const faqs = [
     question: '¿Si no puedo acudir a un sesión, se quita del bono?',
   },
   {
-    answer: '',
-    question: '',
+    answer:
+      'El pago se debe hacer al menos 24 horas antes de la sesión (de la primera sesión, en el caso de los bonos).',
+    question: '¿Cuando tengo que realizar el pago?',
   },
   {
-    answer: '',
-    question: '',
+    answer:
+      'No, el dinero no es reembolsable una vez hecha la transferencia. Sin embargo, cuentas con ventajas como que las sesiones solo se consumen una vez realizadas y no hay penalización por cancelar las sesiones.',
+    question: '¿Se realiza devolución?',
   },
   {
-    answer: '',
-    question: '',
+    answer:
+      'Esto es algo que no se puede concretar, ya que depende de cada caso concreto y de las necesidades del paciente. Sin embargo, al final de la entrevista se dara una orientación sobre como se realizará el proceso, pero sin prometer un número de sesiones determinado.',
+    question: '¿Cuanto dura el proceso?',
   },
   {
-    answer: '',
-    question: '',
+    answer:
+      'No, las sesiones realizadas serán de mutuo acuerdo y siempre se respetará la decisión del paciente; siempre y cuando que se cumplan las condiciones.',
+    question: '¿Tengo que hacer las sesiones que me diga el psicólogo?',
   },
 ];
 ---
 
 <section class='w-full'>
   <div class='flex flex-col'>
-    <div class='py-5'>
-      <details class='group'>
-        <summary> Title 1 </summary>
-        <p class='group-open:animate-fadeIn'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorum
-          ab ut asperiores labore fuga illo vero maiores atque veniam, adipisci
-          consequuntur, voluptate eligendi repellendus et fugit nostrum odio
-          voluptates.
-        </p>
-      </details>
-    </div>
-    <div class='py-5'>
-      <details class='group'>
-        <summary> Title 2 </summary>
-        <p class='group-open:animate-fadeIn'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorum
-          ab ut asperiores labore fuga illo vero maiores atque veniam, adipisci
-          consequuntur, voluptate eligendi repellendus et fugit nostrum odio
-          voluptates.
-        </p>
-      </details>
-    </div>
+    {
+      faqs.map((faq) => (
+        <div class='py-2'>
+          <details class='group'>
+            <summary>{faq.question}</summary>
+            <p class='group-open:animate-fadeIn'>{faq.answer}</p>
+          </details>
+        </div>
+      ))
+    }
   </div>
 </section>
