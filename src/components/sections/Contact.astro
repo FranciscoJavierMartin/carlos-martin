@@ -2,11 +2,13 @@
 
 ---
 
-<section id='contact' class='w-full'>
-  <h2>Contáctame</h2>
-  <form>
-    <input name='name' placeholder='Nombre' />
-    <input name='lastname' placeholder='Apellidos' />
+<section id='contact' class='w-full border border-red-500 flex flex-col items-center'>
+  <h2 class='text-center'>Contáctame</h2>
+  <form class='flex flex-col gap-3 w-3/5 border border-green-500'>
+    <div class='flex w-full gap-3'>
+      <input name='name' placeholder='Nombre' class='w-1/2' />
+      <input name='lastname' placeholder='Apellidos' class='w-1/2' />
+    </div>
     <input name='email' placeholder='Email' />
     <input type='tel' name='phone' placeholder='Teléfono' />
     <textarea name='message' placeholder='Mensaje'></textarea>
