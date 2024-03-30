@@ -9,7 +9,10 @@ export default {
           steel: '#61829f',
           light: '#87adcf',
         },
-        salmon: '#e8aea3',
+        salmon: {
+          light: '#e8aea3',
+          active: '#ff5733',
+        },
         beige: '#F2EDE8',
       },
       letterSpacing: {
