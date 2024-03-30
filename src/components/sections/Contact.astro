@@ -46,5 +46,13 @@
   form?.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log('Submitted');
+    // const url = `https://api.whatsapp.com/send?text?`
+    // const phoneNumber = '+34677119174'
+    const phoneNumber = '+34651671965';
+    const text = 'Test message';
+    const url = `https://api.whatsapp.com/${phoneNumber}?text=${text}`;
+
+    window.open(url, '_blank')?.focus();
+    console.log('Sent')
   });
 </script>
