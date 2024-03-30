@@ -7,7 +7,7 @@
   class='w-full flex flex-col items-center bg-blue-light py-20'
 >
   <h2 class='text-center text-3xl text-white mb-10'>Contáctame</h2>
-  <form class='flex flex-col gap-4 w-3/5'>
+  <form class='flex flex-col gap-4 w-3/5' id='contactform'>
     <div class='flex w-full gap-3'>
       <input
         name='name'
@@ -27,8 +27,11 @@
       placeholder='Teléfono'
       class='rounded-md py-1 px-3'
     />
-    <textarea name='message' placeholder='Mensaje' class='rounded-md py-1 px-3'
-    ></textarea>
+    <textarea
+      name='message'
+      placeholder='Mensaje'
+      class='rounded-md py-1 px-3'
+      style='field-sizing: content;'></textarea>
     <button
       type='submit'
       class='self-end bg-salmon px-2 py-1 rounded-md text-white w-28'
@@ -37,3 +40,11 @@
     </button>
   </form>
 </section>
+
+<script>
+  const form = document.getElementById('contactform');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('Submitted');
+  });
+</script>
