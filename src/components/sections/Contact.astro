@@ -2,6 +2,57 @@
 
 ---
 
-<section id="contact" class="h-screen grid place-content-center">
-  Contacto
+<section
+  id='contact'
+  class='w-full flex flex-col items-center bg-blue-light py-20'
+>
+  <h2 class='text-center text-3xl text-white mb-10'>Contáctame</h2>
+  <form class='flex flex-col gap-4 w-3/5' id='contactform'>
+    <div class='flex flex-col w-full gap-3 md:flex-row'>
+      <input
+        name='name'
+        placeholder='Nombre'
+        class='w-full rounded-md py-1 px-3 md:w-1/2'
+      />
+      <input
+        name='lastname'
+        placeholder='Apellidos'
+        class='w-full rounded-md py-1 px-3 md:w-1/2'
+      />
+    </div>
+    <input name='email' placeholder='Email' class='rounded-md py-1 px-3' />
+    <input
+      type='tel'
+      name='phone'
+      placeholder='Teléfono'
+      class='rounded-md py-1 px-3'
+    />
+    <textarea
+      name='message'
+      placeholder='Mensaje'
+      class='rounded-md py-1 px-3'
+      rows='7'></textarea>
+    <button
+      type='submit'
+      class='bg-salmon-active px-2 py-1 rounded-md text-white md:w-28 md:self-end'
+    >
+      Enviar
+    </button>
+  </form>
 </section>
+
+<script>
+  const form = document.getElementById('contactform');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('Submitted');
+    // const url = `https://api.whatsapp.com/send?text?`
+    // const phoneNumber = '+34677119174'
+    const phoneNumber = '+34651671965';
+    const text = 'Test message';
+    const url = `https://api.whatsapp.com/${phoneNumber}?text=${text}`;
+
+    window.open(url, '_blank')?.focus();
+    console.log('Sent')
+  });
+</script>
