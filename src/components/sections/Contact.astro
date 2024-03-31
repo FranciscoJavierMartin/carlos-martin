@@ -7,7 +7,7 @@
   class='w-full flex flex-col items-center bg-blue-light py-20'
 >
   <h2 class='text-center text-3xl text-white mb-10'>Contáctame</h2>
-  <form class='flex flex-col gap-4 w-3/5' id='contactform'>
+  <form class='flex flex-col gap-4 w-4/5 md:w-3/5' id='contactform'>
     <div class='flex flex-col w-full gap-3 md:flex-row'>
       <input
         name='name'
@@ -53,6 +53,6 @@
     const url = `https://api.whatsapp.com/${phoneNumber}?text=${text}`;
 
     window.open(url, '_blank')?.focus();
-    console.log('Sent')
+    console.log('Sent');
   });
 </script>
