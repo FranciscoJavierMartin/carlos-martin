@@ -5,67 +5,71 @@ import caraCorazon from '../../assets/cara_corazon.svg';
 import movil from '../../assets/movil.svg';
 ---
 
-<section id='aboutme' class='p-3 py-14 w-full flex md:px-5 bg-golden'>
-  <div class='text-white max-md:pb-5 md:w-[80%]'>
-    <h2
-      class='tracking-ultra-wide pb-5 font-semibold text-[43px] text-center uppercase text-blue-steel [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(255,255,255,0.5)] md:text-left'
-    >
-      Conoce un poco más a tu futuro psicólogo
-    </h2>
-    <p class='font-extralight leading-10 text-2xl'>
-      Hola, mi nombre es <span class='font-semibold underline'
-        >Carlos Martín</span
-      >, soy <span class='font-semibold underline'>psicólogo deportivo</span> y <span
-        class='font-semibold underline'>sanitario</span
-      >, colegiado número <span class='font-semibold underline'>M-40466</span> como
-      profesional, siempre doy <span class='font-semibold underline'
-        >gran importancia</span
-      > a la <span class='font-semibold underline'>valentía</span> que tienen las
-      personas que trabajan conmigo, así como la <span
-        class='font-semibold underline'>gratitud</span
-      > que siento por la <span class='font-semibold underline'>confianza</span>
-      que depositan en mi, ya sea para <span class='font-semibold underline'
-        >gestionar su malestar</span
-      > y/o <span class='font-semibold underline'
-        >mejorar su rendimiento deportivo</span
-      >.
-    </p>
-    <p class='font-semibold underline py-6'>
-      "La psicología parece magia por el gran efecto positivo que puede provocar
-      en nosotros, pero es la ciencia que estudia el comportamiento, emociones y
-      pensamiento humano; y nos ayuda en gran medida a mejorar nuestro
-      bienestar."
-    </p>
-    <p class='font-extralight text-xl leading-10'>
-      A continuación te dejo algunas de las <span
-        class='font-semibold underline'>formaciones</span
-      > más importantes que tengo como profesional:
-    </p>
-    <ul class='font-extralight text-xl leading-10'>
-      <li>
-        <span class='font-semibold underline'>Graduado en Psicología</span> por la
-        UMA
-      </li>
-      <li>
-        <span class='font-semibold underline'>
-          Máster en Psicología del Deporte y la Actividad Física
-        </span> por la UAM
-      </li>
-      <li>
-        <span class='font-semibold underline'>
-          Máster en Psicología General Sanitaria
-        </span> por la UEM
-      </li>
-      <li>
-        Ademas de un gran número de cursos, formaciones y experiencia
-        profesional en trastornos de la conducta alimentaria, deporte de alto
-        rendimiento y un largo etc.
-      </li>
-    </ul>
+<section id='aboutme' class='p-3 py-14 w-full md:px-5 bg-golden'>
+  <h2
+    class='tracking-ultra-wide pb-5 font-semibold text-[43px] text-center uppercase text-blue-steel [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(255,255,255,0.5)] md:text-left'
+  >
+    Conoce un poco más a tu futuro psicólogo
+  </h2>
+  <div class="flex">
+    <div class='text-white max-md:pb-5 md:w-[80%]'>
+      <p class='font-extralight leading-10 text-2xl'>
+        Hola, mi nombre es <span class='font-semibold underline'
+          >Carlos Martín</span
+        >, soy <span class='font-semibold underline'>psicólogo deportivo</span> y
+        <span class='font-semibold underline'>sanitario</span>, colegiado número <span
+          class='font-semibold underline'>M-40466</span
+        > como profesional, siempre doy <span class='font-semibold underline'
+          >gran importancia</span
+        > a la <span class='font-semibold underline'>valentía</span> que tienen las
+        personas que trabajan conmigo, así como la <span
+          class='font-semibold underline'>gratitud</span
+        > que siento por la <span class='font-semibold underline'
+          >confianza</span
+        >
+        que depositan en mi, ya sea para <span class='font-semibold underline'
+          >gestionar su malestar</span
+        > y/o <span class='font-semibold underline'
+          >mejorar su rendimiento deportivo</span
+        >.
+      </p>
+      <p class='font-semibold underline py-6'>
+        "La psicología parece magia por el gran efecto positivo que puede
+        provocar en nosotros, pero es la ciencia que estudia el comportamiento,
+        emociones y pensamiento humano; y nos ayuda en gran medida a mejorar
+        nuestro bienestar."
+      </p>
+      <p class='font-extralight text-xl leading-10'>
+        A continuación te dejo algunas de las <span
+          class='font-semibold underline'>formaciones</span
+        > más importantes que tengo como profesional:
+      </p>
+      <ul class='font-extralight text-xl leading-10'>
+        <li>
+          <span class='font-semibold underline'>Graduado en Psicología</span> por
+          la UMA
+        </li>
+        <li>
+          <span class='font-semibold underline'>
+            Máster en Psicología del Deporte y la Actividad Física
+          </span> por la UAM
+        </li>
+        <li>
+          <span class='font-semibold underline'>
+            Máster en Psicología General Sanitaria
+          </span> por la UEM
+        </li>
+        <li>
+          Ademas de un gran número de cursos, formaciones y experiencia
+          profesional en trastornos de la conducta alimentaria, deporte de alto
+          rendimiento y un largo etc.
+        </li>
+      </ul>
+    </div>
+    <div class='md:w-1/5 pl-10'>
+      <Image src={cara} height='600' width='600' alt='Carlos Martin' />
+      <Image src={caraCorazon} height='600' width='600' alt='Carlos Martin' />
+      <Image src={movil} height='600' width='600' alt='Carlos Martin' />
+    </div>
   </div>
-  <!--<div>
-    <Image src={cara} height='600' width='600' alt='Carlos Martin' />
-    <Image src={caraCorazon} height='600' width='600' alt='Carlos Martin' />
-    <Image src={movil} height='600' width='600' alt='Carlos Martin' />
-  </div>-->
 </section>
