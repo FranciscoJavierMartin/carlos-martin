@@ -31,17 +31,14 @@ const faqs = [
 ];
 ---
 
-<section
-  id='faq'
-  class='p-3 w-full flex justify-end max-md:bg-blue-steel md:px-2'
->
-  <div class='bg-blue-steel flex flex-col p-7 md:w-[70%]'>
+<section id='faq' class='p-3 py-14 w-full flex flex-col bg-blue-steel md:px-5'>
+  <div class='flex flex-col items-center'>
     <h2
-      class='tracking-ultra-wide pb-8 font-semibold text-4xl text-center uppercase text-golden [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(97,130,159,0.43)] md:pr-8 md:text-right'
+      class='tracking-ultra-wide pb-8 font-semibold text-7xl text-center uppercase text-golden [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(97,130,159,0.43)]'
     >
       Preguntas frecuentes
     </h2>
-    <div class='flex flex-col text-white'>
+    <div class='flex flex-col text-white text-xl w-3/5'>
       {
         faqs.map((faq) => (
           <div class='py-2'>
