@@ -1,25 +1,32 @@
 ---
-
+import { Image } from 'astro:assets';
+import cara from '../../assets/cara.svg';
+import caraCorazon from '../../assets/cara_corazon.svg';
+import movil from '../../assets/movil.svg';
 ---
 
-<section id='aboutme' class='p-3 w-full flex md:px-2 max-md:bg-salmon-light'>
-  <div class='bg-salmon-light text-white max-md:pb-5 md:w-[70%]'>
+<section id='aboutme' class='p-3 w-full flex md:px-5 bg-golden'>
+  <div class='text-white max-md:pb-5 md:w-[70%]'>
     <h2
-      class='tracking-ultra-wide pb-4 font-bold text-3xl text-center uppercase text-blue-steel [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(97,130,159,0.43)] md:text-left md:pl-8'
+      class='tracking-ultra-wide pb-4 font-bold text-3xl text-center uppercase text-blue-steel [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(97,130,159,0.43)] md:text-left'
     >
       Conoce un poco más a tu futuro psicólogo
     </h2>
     <p>
-      Hola, mi nombre es Carlos Martín, soy psicólogo deportivo y sanitario;
-      como profesional, siempre doy gran importancia a la valentía que tienen
-      las personas que trabajan conmigo, así como agradezco la confianza que
-      depositan en mi, ya sea para gestionar su malestar y/o mejorar su
-      rendimiento deportivo.
+      Hola, mi nombre es Carlos Martín, soy psicólogo deportivo y sanitario,
+      colegiado número M-40466 como profesional, siempre doy gran importancia a
+      la valentía que tienen las personas que trabajan conmigo, así como
+      agradezco la confianza que depositan en mi, ya sea para gestionar su
+      malestar y/o mejorar su rendimiento deportivo.
     </p>
     <p>
-      La psicología no es magia, es la ciencia que estudia al comportamiento,
-      emociones y pensamiento humano; y nos ayuda en gran medida a mejorar
-      nuestro bienestar.
+      La psicología parece magia por el gran efecto positivo que puede provocar
+      en nosotros, pero es la ciencia que estudia el comportamiento, emociones y
+      pensamiento humano; y nos ayuda en gran medida a mejorar nuestro bienestar
+    </p>
+    <p>
+      A continuación te dejo algunas de las formaciones más importantes que
+      tengo como profesional:
     </p>
     <ul>
       <li>Graduado en Psicología por la UMA</li>
@@ -31,5 +38,10 @@
         rendimiento y un largo etc.
       </li>
     </ul>
+  </div>
+  <div>
+    <Image src={cara} height='600' width='600' alt='Carlos Martin' />
+    <Image src={caraCorazon} height='600' width='600' alt='Carlos Martin' />
+    <Image src={movil} height='600' width='600' alt='Carlos Martin' />
   </div>
 </section>
