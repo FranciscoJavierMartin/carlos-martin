@@ -11,8 +11,8 @@ import movil from '../../assets/movil.svg';
   >
     Conoce un poco más a tu futuro psicólogo
   </h2>
-  <div class="flex">
-    <div class='text-white max-md:pb-5 md:w-[80%]'>
+  <div class='flex'>
+    <div class='text-white max-md:pb-5 md:w-[83%]'>
       <p class='font-extralight leading-10 text-2xl'>
         Hola, mi nombre es <span class='font-semibold underline'
           >Carlos Martín</span
@@ -66,10 +66,28 @@ import movil from '../../assets/movil.svg';
         </li>
       </ul>
     </div>
-    <div class='md:w-1/5 pl-10'>
-      <Image src={cara} height='600' width='600' alt='Carlos Martin' />
-      <Image src={caraCorazon} height='600' width='600' alt='Carlos Martin' />
-      <Image src={movil} height='600' width='600' alt='Carlos Martin' />
+    <div class='flex flex-col items-center pl-5 pt-6 md:w-[17%]'>
+      <Image
+        src={cara}
+        height='600'
+        width='600'
+        alt='Carlos Martin'
+        class='pb-12 w-[90%]'
+      />
+      <Image
+        src={caraCorazon}
+        height='600'
+        width='600'
+        alt='Carlos Martin'
+        class='pb-20 w-[65%] -scale-x-100'
+      />
+      <Image
+        src={movil}
+        height='600'
+        width='600'
+        alt='Carlos Martin'
+        class='w-[80%]'
+      />
     </div>
   </div>
 </section>
