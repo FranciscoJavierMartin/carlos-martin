@@ -1,11 +1,14 @@
 ---
-
+const { inverted = false } = Astro.props;
 ---
 
 <svg
   xmlns='http://www.w3.org/2000/svg'
   viewBox='0 0 1440 320'
-  class='-mt-[265px]'
+  class:list={{
+    '-mt-[265px]': !inverted,
+    '-scale-y-100 -mb-[205px]': inverted,
+  }}
 >
   <path
     fill='currentColor'
