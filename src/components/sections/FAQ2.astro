@@ -31,24 +31,25 @@ const faqs = [
 ];
 ---
 
-<section id='faq' class='p-3 py-14 w-full flex flex-col bg-blue-steel md:px-5'>
-  <div class='flex flex-col items-center'>
-    <h2
-      class='tracking-ultra-wide pb-8 font-semibold text-7xl text-center uppercase text-salmon-light [text-shadow:3px_3px_3px_var(--tw-shadow-color)] shadow-[rgb(232,174,163,0.43)]'
-    >
-      Preguntas frecuentes
-    </h2>
-    <div class='flex flex-col text-white text-xl w-3/5'>
-      {
-        faqs.map((faq) => (
-          <div class='py-2'>
-            <details class='group'>
-              <summary>{faq.question}</summary>
-              <p class='pl-5 group-open:animate-fadeIn'>{faq.answer}</p>
-            </details>
-          </div>
-        ))
-      }
-    </div>
+<section
+  id='faq'
+  class='p-3 py-14 w-full flex flex-col items-center bg-blue-steel md:px-5'
+>
+  <h2
+    class='max-w-7xl tracking-ultra-wide pb-8 font-semibold text-7xl text-center uppercase text-salmon-light [text-shadow:3px_3px_3px_var(--tw-shadow-color)] shadow-[rgb(232,174,163,0.43)]'
+  >
+    Preguntas frecuentes
+  </h2>
+  <div class='max-w-7xl flex flex-col text-white text-1.5xl w-3/5'>
+    {
+      faqs.map((faq) => (
+        <div class='py-2'>
+          <details class='group'>
+            <summary>{faq.question}</summary>
+            <p class='pl-5 group-open:animate-fadeIn'>{faq.answer}</p>
+          </details>
+        </div>
+      ))
+    }
   </div>
 </section>
