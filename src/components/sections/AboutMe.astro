@@ -5,14 +5,17 @@ import caraCorazon from '../../assets/cara_corazon.svg';
 import movil from '../../assets/movil.svg';
 ---
 
-<section id='aboutme' class='p-3 py-14 w-full md:px-5 bg-golden'>
+<section
+  id='aboutme'
+  class='flex flex-col items-center p-3 py-14 w-full bg-golden md:px-5'
+>
   <h2
-    class='tracking-ultra-wide pb-5 font-semibold text-[43px] text-center uppercase text-blue-steel [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(255,255,255,0.5)] md:text-left'
+    class='max-w-7xl tracking-ultra-wide pb-5 font-semibold text-[43px] text-center uppercase text-blue-steel [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-[rgba(255,255,255,0.5)] md:text-left'
   >
     Conoce un poco más a tu futuro psicólogo
   </h2>
-  <div class='flex'>
-    <div class='text-white max-md:pb-5 md:w-[83%]'>
+  <div class='max-w-7xl flex'>
+    <div class='text-white max-md:pb-5 md:w-4/5'>
       <p class='font-extralight leading-10 text-2xl'>
         Hola, mi nombre es <span class='font-semibold underline'
           >Carlos Martín</span
@@ -44,7 +47,7 @@ import movil from '../../assets/movil.svg';
           class='font-semibold underline'>formaciones</span
         > más importantes que tengo como profesional:
       </p>
-      <ul class='font-extralight text-xl leading-10'>
+      <ul class='font-extralight text-1.5xl leading-10'>
         <li>
           <span class='font-semibold underline'>Graduado en Psicología</span> por
           la UMA
@@ -66,7 +69,7 @@ import movil from '../../assets/movil.svg';
         </li>
       </ul>
     </div>
-    <div class='flex flex-col items-center pl-5 pt-6 md:w-[17%]'>
+    <div class='flex flex-col items-center pl-5 pt-6 md:w-1/5'>
       <Image
         src={cara}
         height='600'
