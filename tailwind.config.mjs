@@ -17,6 +17,7 @@ export default {
       },
       fontSize: {
         '1.5xl': '22px',
+        '2.5xl': '27px',
         '4.5xl': '2.5rem',
       },
       letterSpacing: {
