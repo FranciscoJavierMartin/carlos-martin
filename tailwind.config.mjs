@@ -15,6 +15,10 @@ export default {
         },
         beige: '#F2EDE8',
       },
+      fontSize: {
+        '1.5xl': '22px',
+        '4.5xl': '2.5rem',
+      },
       letterSpacing: {
         'ultra-wide': '0.35rem',
       },
