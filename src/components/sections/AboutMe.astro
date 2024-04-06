@@ -3,8 +3,12 @@ import { Image } from 'astro:assets';
 import cara from '../../assets/cara.svg';
 import caraCorazon from '../../assets/cara_corazon.svg';
 import movil from '../../assets/movil.svg';
+import Divider from '../divider/Divider.astro';
 ---
 
+<div class='text-golden'>
+  <Divider />
+</div>
 <section
   id='aboutme'
   class='flex flex-col items-center p-3 py-14 w-full bg-golden md:px-5'
@@ -96,3 +100,6 @@ import movil from '../../assets/movil.svg';
     </div>
   </div>
 </section>
+<div class='text-golden'>
+  <Divider inverted />
+</div>
