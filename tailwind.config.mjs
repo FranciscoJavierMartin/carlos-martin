@@ -15,6 +15,9 @@ export default {
         },
         beige: '#F2EDE8',
       },
+      maxWidth: {
+        '5.5xl': '69rem',
+      },
       fontSize: {
         '1.5xl': '22px',
         '2.5xl': '27px',
