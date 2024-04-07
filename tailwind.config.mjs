@@ -19,6 +19,7 @@ export default {
         '5.5xl': '69rem',
       },
       fontSize: {
+        xss: '6px',
         '1.5xl': '22px',
         '2.5xl': '27px',
         '3.5xl': '33px',
